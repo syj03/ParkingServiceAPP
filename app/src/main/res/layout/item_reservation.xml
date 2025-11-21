@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 주차장 이름 -->
+        <TextView
+            android:id="@+id/parking_lot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장 이름"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- 예약 시간 -->
+        <TextView
+            android:id="@+id/reservation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예약 시간: YYYY-MM-DD HH:mm"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#666666" />
+
+        <!-- 예약 상태 -->
+        <TextView
+            android:id="@+id/reservation_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상태: 예약완료"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#4CAF50" />
+
+        <!-- 삭제 버튼 -->
+        <Button
+            android:id="@+id/delete_reservation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#FF5252"
+            android:text="삭제"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

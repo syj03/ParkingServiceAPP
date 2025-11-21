@@ -1,0 +1,14 @@
+<!-- res/layout/activity_intro.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 로고나 이미지 등을 표시할 수 있는 예제 -->
+    <ImageView
+        android:id="@+id/intro_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/plogo"
+        android:layout_centerInParent="true" /> <!-- your_logo는 로고 이미지 -->
+
+</RelativeLayout>
